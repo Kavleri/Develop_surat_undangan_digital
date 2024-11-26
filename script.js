@@ -20,5 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function toggleMenu() {
-    const menu = document.querySelector('.navbar-menu').classList.toggle('active');
+    const navbarMenu = document.querySelector('.navbar-menu');
+    navbarMenu.classList.toggle('active');
 }
