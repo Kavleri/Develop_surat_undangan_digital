@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Pembuatan Undangan Digital</title>
+    <style>
+body, h1, h2, h3, p, ul, li, a, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header.hero {
+    background: url('gambar web.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: black;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background: #007BFF;
+}
+
+.btn-secondary {
+    background: #28A745;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#pricing {
+    background-color: #464444;
+    color: lemonchiffon;
+}
+
+#pricing .pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#digital-invitation {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#digital-invitation h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.demo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.demo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.demo-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#digital-invitation .btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #f39c12, #e67e22);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#digital-invitation .btn-primary:hover {
+    background: linear-gradient(45deg, #e67e22, #f39c12);
+    transform: scale(1.05);
+}
+
+
+#testimonials .testimonial-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+#order form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+            background-color: #333;
+            padding: 10px 20px 0px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .navbar-menu li {
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar-menu li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 0px;
+            font-size: 22px;
+            font-weight: bold;
+            border: 0px solid transparent;
+            border-radius: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-menu li a:hover {
+            background-color: #f39c12;
+            color: white;
+            border: 2px solid #2b2a2a;
+            transform: scale(1.1);
+        }
+
+        .navbar-menu li a::after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            background: #fff;
+            transition: width 0.3s ease;
+            margin: 0 auto;
+        }
+
+        .navbar-menu li a:hover::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-menu {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                width: 100%;
+                padding: 10px 0;
+            }
+        
+            .navbar-menu.active {
+                display: flex;
+                background-color: #444;
+            }
+        
+            .navbar-menu li a {
+                font-size: 12px;
+                padding: 10px 20px;
+                text-align: center;
+                color: #fff;
+                transition: none;
+            }
+            .navbar-menu li a:hover {
+                background-color: transparent;
+                border: transparent;
+            }
+        }
+
+.auth-buttons a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.auth-buttons .btn-login {
+    background: transparent;
+}
+
+.auth-buttons .btn-signup {
+    background: #f39c12;
+    color: #fff;
+}
+
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    font-family: 'Sacramento', cursive;
+    background: linear-gradient(90deg, #f39c12, #fff, #e67e22);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    animation: floating 3s ease-in-out infinite, shine 4s linear infinite;
+}
+
+
+#features-invitation {
+    padding: 50px 20px;
+    background-color: #363535;
+    border-radius: 8px;
+}
+
+#features-invitation h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.feature h3 {
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.feature p {
+    color: #666666;
+}
+
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.pricing-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    color: black;
+}
+
+
+.testimonial-slider {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.testimonial {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.btn-primary {
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #007BFF;
+}
+
+.btn-secondary {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background: grey;
+    border-color: black;
+}
+
+.btn-secondary:hover {
+    background-color: #007BFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+form input, form select, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#order {
+    background: rgb(27, 27, 110);
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#order h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#order form {
+    background: #fff;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#order form input,
+#order form select,
+#order form textarea,
+#order form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#order form input:focus,
+#order form select:focus,
+#order form textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+#order form textarea {
+    height: 100px;
+    resize: none;
+}
+
+#order form button {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#order form button:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+#order .btn-primary {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#order .btn-primary:hover {
+    background: #f39c12;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+footer p a {
+    color : #f39c12;
+    text-decoration: none;
+    margin: 5px 0; font-size: 20px; font-weight: bold;
+}
+
+a:hover {
+    color: rgb(118, 255, 159);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .toggle-menu {
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-container, .pricing-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature, .pricing-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #testimonials .testimonial-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer div {
+        text-align: center;
+    }
+
+    footer p, footer a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #developer-profile {
+        padding: 30px 10px;
+    }
+
+    #developer-profile img {
+        width: 80px;
+    }
+
+    #developer-profile p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 300px;
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-primary {
+        padding: 8px 10px;
+        font-size: 0.5rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="toggle-menu" onclick="toggleMenu()">☰</div>
+            <ul class="navbar-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#digital-invitation">Surat Undangan Digital</a></li>
+                <li><a href="filter.html">Filter Instagram</a></li>
+                <li><a href="guestbook.html">Buku Tamu Digital QR Code</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="registrasi.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home"><br><br><br>
+        <div class="hero-content">
+            <h1>Undangan Digital Modern & Unik</h1>
+            <p>Solusi terbaik untuk undangan pernikahan, ulang tahun, dan acara lainnya.</p>
+            <br>
+            <a href="#order" class="btn-primary">Pesan Sekarang</a>
+        </div>
+    </header>
+    <br><br>
+    
+<br><br>
+<section id="features-invitation">
+    <h2>Fitur Undangan Digital Kami</h2>
+    <div class="features-container">
+        <div class="feature">
+            <h3>Responsive Mobile Friendly</h3>
+            <p>Ramah terhadap pengguna mobile dari berbagai sisi.</p>
+        </div>
+        <div class="feature">
+            <h3>Custom Nama Tamu</h3>
+            <p>Available untuk custom nama tamu apabila dibutuhkan. Mudah dan cepat.</p>
+        </div>
+        <div class="feature">
+            <h3>Elegant & Colorful Styles</h3>
+            <p>Tersedia puluhan template undangan dengan berbagai tampilan yang apik.</p>
+        </div>
+        <div class="feature">
+            <h3>Lokasi & Waktu Resepsi</h3>
+            <p>Tersedia fitur lokasi dan waktu akad/resepsi yang bisa dicustom.</p>
+        </div>
+        <div class="feature">
+            <h3>Informasi Kedua Pasangan</h3>
+            <p>Bisa custom informasi dari kedua calon mempelai.</p>
+        </div>
+        <div class="feature">
+            <h3>Galeri Foto & Video</h3>
+            <p>Tampilkan foto dan video prewedding terbaikmu dengan fitur ini.</p>
+        </div>
+        <div class="feature">
+            <h3>Countdown Wedding</h3>
+            <p>Terdapat fitur count down (hari, jam, detik) acara.</p>
+        </div>
+        <div class="feature">
+            <h3>Story Love Timeline</h3>
+            <p>Ceritakan perjalanan cintamu dari awal bertemu hingga menikah.</p>
+        </div>
+        <div class="feature">
+            <h3>Navigasi Peta Lokasi</h3>
+            <p>Fitur navigasi peta sebagai penunjuk lokasi yang terintegrasi langsung dengan Google Maps.</p>
+        </div>
+        <div class="feature">
+            <h3>Quotes & Doa</h3>
+            <p>Bubuhkan doa dan quotes yang kamu inginkan di dalam undangan.</p>
+        </div>
+        <div class="feature">
+            <h3>Buku Tamu</h3>
+            <p>Terdapat buku tamu bagi yang ingin mengucapkan selamat atau konfirmasi kehadiran.</p>
+        </div>
+        <div class="feature">
+            <h3>Musik Latar</h3>
+            <p>Saat undangan dibuka, otomatis play musik. Bebas pasang musik yang berkesan untuk kalian.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="digital-invitation">
+        <h2>Contoh Surat Undangan Digital</h2>
+        <div class="demo-container">
+            <img src="Template1.png" alt="Demo 1">
+            <img src="Template2.png" alt="Demo 2">
+            <img src="Template3.png" alt="Demo 3">
+            <img src="Template4.png" alt="Demo 4">
+            <img src="template5.png" alt="Demo 5">
+        </div>
+        <a href="#order" class="btn-primary">Buat Surat Undangan</a>
+    </section>
+
+    <section id="pricing">
+        <h2>Paket Harga</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Paket Basic</h3>
+                <p>Desain undangan digital sederhana.</p>
+                <p>Harga: Rp 100.000</p>
+                <a href="#order" class="btn-secondary">Pesan Paket</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Paket Standard</h3>
+                <p>Desain undangan digital + fitur animasi.</p>
+                <p>Harga: Rp 300.000</p>
+                <a href="#order" class="btn-secondary">Pesan Paket</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Paket Premium</h3>
+                <p>Desain custom dengan fitur lengkap.</p>
+                <p>Harga: Rp 500.000</p>
+                <a href="#order" class="btn-secondary">Pesan Paket</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Desainnya sangat bagus, saya sangat puas!"</p>
+                <h4>- Siti</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Pelayanan cepat dan hasilnya memuaskan."</p>
+                <h4>- Andi</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Harga terjangkau untuk hasil yang luar biasa."</p>
+                <h4>- Rina</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" style="background: url('gambar\ wedding.jpg');">
+        <h2>Pesan Sekarang</h2>
+        <form method="POST" action="pesanan.php">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <select name="package" required>
+                <option value="" disabled selected>Pilih Paket</option>
+                <option value="basic">Paket Basic</option>
+                <option value="standard">Paket Standard</option>
+                <option value="premium">Paket Premium</option>
+            </select>
+            <textarea name="details" placeholder="Detail Pesanan Anda" required></textarea>
+            <button type="submit" name="submit" class="btn-primary">Kirim</button>
+        </form>
+    </section>
+
+<section id="contact" style="text-align: center; padding: 50px 20px; background-color: #f8f9fa;">
+    <h2 style="color: #ff5e57; margin-bottom: 20px;">Hai Hisyam</h2>
+    <h3 style="font-family: 'Georgia', serif; margin-bottom: 10px; font-size: 24px;">
+      Tidak Menemukan Desain Sesuai Keinginan Anda?
+    </h3>
+    <p style="color: #6c757d; font-size: 16px; max-width: 600px; margin: 0 auto 30px;">
+      Konsultasikan dengan kami kebutuhan undangan online Anda. Akan kami berikan pilihan dan masukan yang tepat untuk wedding invitation idaman Anda.
+    </p>
+    <a href="contact.html" style="display: inline-block; background-color: #ff5e57; color: #fff; padding: 10px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+      Hubungi Sekarang
+    </a>
+  </section>
+  <section id="developer-profile" style="padding: 50px 20px; background-color: #003366; text-align: center;">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; background-color:#e6f7ff; height: auto; border: 1px solid #ccc; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="Foto GW.jpg" alt="Foto Pengembang" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
+        <h2 style="color: #003366; margin-bottom: 10px;">Profil Pengembang</h2>
+        <p style="color: #333; font-size: 18px; max-width: 600px; margin: 0;">
+            Saya adalah mahasiswa yang sedang menempuh jenjang perkuliahan S1 di Sekolah Tinggi Teknologi Nurul Fikri dengan Program Studi Teknik Informatika. Saat ini, saya fokus untuk mengembangkan website yang inovatif dan bermanfaat bagi masyarakat.
+        </p>
+    </div>
+</section>
+  <footer style="background-color: pink; padding: 40px 20px; text-align: center;">
+    <div style="margin-bottom: 30px;">
+      <p style="color: #6c757d; margin: 0;">PO Box 16916</p>
+      <p style="color: #6c757d; margin: 0;">Cibinong,Bogor Jawa Barat</p>
+      <p style="color: #6c757d; margin: 0;">Indonesia</p>
+    </div>
+    <div>
+      <p style="color: #495057; margin: 0; font-size: 18px;">Telp / Whatsapp</p>
+      <p><a href="https://wa.me/6285691753134?text=Halo,%20saya%20ingin%20menanyakan%20tentang%20produk%20Anda.">085691753134</a></p>
+      <p style="color: #495057; margin: 0; font-size: 18px;">E-mail</p>
+      <p style="margin: 5px 0; font-size: 20px;"><a href="mailto:muhammadhisyamalfaris2085@gmail.com">info@Hisyam.com</a></p>
+    </div>
+    <div>
+      <a href="#" style="margin: 0 10px; color: #ff5e57; font-size: 24px;">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href=https://www.instagram.com/drag_his/" style="margin: 0 10px; color: #ff5e57; font-size: 24px;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" style="margin: 0 10px; color: #ff5e57; font-size: 24px;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="#" style="margin: 0 10px; color: #ff5e57; font-size: 24px;">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+    <a href="#top" style="display: inline-block; margin-top: 20px; text-decoration: none;">
+      <i class="fas fa-arrow-up" style="font-size: 24px; color: #ff5e57;"></i>
+    </a>
+</footer>
+
+    <footer>
+        <p>&copy; 2024 Jasa Pembuatan Undangan Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

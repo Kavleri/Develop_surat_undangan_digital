@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+            background: url('Gambar\ untuk\ halaman\ filter.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input[type="file"] {
+            margin: 10px 0;
+        }
+
+        form select {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        .preview {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .preview img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .filter-1 { filter: hue-rotate(3.6deg); }
+.filter-2 { filter: hue-rotate(7.2deg); }
+.filter-3 { filter: hue-rotate(10.8deg); }
+.filter-4 { filter: hue-rotate(14.4deg); }
+.filter-5 { filter: hue-rotate(18.0deg); }
+.filter-6 { filter: hue-rotate(21.6deg); }
+.filter-7 { filter: hue-rotate(25.2deg); }
+.filter-8 { filter: hue-rotate(28.8deg); }
+.filter-9 { filter: hue-rotate(32.4deg); }
+.filter-10 { filter: hue-rotate(36.0deg); }
+.filter-11 { filter: hue-rotate(39.6deg); }
+.filter-12 { filter: hue-rotate(43.2deg); }
+.filter-13 { filter: hue-rotate(46.800000000000004deg); }
+.filter-14 { filter: hue-rotate(50.4deg); }
+.filter-15 { filter: hue-rotate(54.0deg); }
+.filter-16 { filter: hue-rotate(57.6deg); }
+.filter-17 { filter: hue-rotate(61.2deg); }
+.filter-18 { filter: hue-rotate(64.8deg); }
+.filter-19 { filter: hue-rotate(68.4deg); }
+.filter-20 { filter: hue-rotate(72.0deg); }
+.filter-21 { filter: hue-rotate(75.60000000000001deg); }
+.filter-22 { filter: hue-rotate(79.2deg); }
+.filter-23 { filter: hue-rotate(82.8deg); }
+.filter-24 { filter: hue-rotate(86.4deg); }
+.filter-25 { filter: hue-rotate(90.0deg); }
+.filter-26 { filter: hue-rotate(93.60000000000001deg); }
+.filter-27 { filter: hue-rotate(97.2deg); }
+.filter-28 { filter: hue-rotate(100.8deg); }
+.filter-29 { filter: hue-rotate(104.4deg); }
+.filter-30 { filter: hue-rotate(108.0deg); }
+.filter-31 { filter: hue-rotate(111.60000000000001deg); }
+.filter-32 { filter: hue-rotate(115.2deg); }
+.filter-33 { filter: hue-rotate(118.8deg); }
+.filter-34 { filter: hue-rotate(122.4deg); }
+.filter-35 { filter: hue-rotate(126.0deg); }
+.filter-36 { filter: hue-rotate(129.6deg); }
+.filter-37 { filter: hue-rotate(133.20000000000002deg); }
+.filter-38 { filter: hue-rotate(136.8deg); }
+.filter-39 { filter: hue-rotate(140.4deg); }
+.filter-40 { filter: hue-rotate(144.0deg); }
+.filter-41 { filter: hue-rotate(147.6deg); }
+.filter-42 { filter: hue-rotate(151.20000000000002deg); }
+.filter-43 { filter: hue-rotate(154.8deg); }
+.filter-44 { filter: hue-rotate(158.4deg); }
+.filter-45 { filter: hue-rotate(162.0deg); }
+.filter-46 { filter: hue-rotate(165.6deg); }
+.filter-47 { filter: hue-rotate(169.20000000000002deg); }
+.filter-48 { filter: hue-rotate(172.8deg); }
+.filter-49 { filter: hue-rotate(176.4deg); }
+.filter-50 { filter: hue-rotate(180.0deg); }
+.filter-51 { filter: hue-rotate(183.6deg); }
+.filter-52 { filter: hue-rotate(187.20000000000002deg); }
+.filter-53 { filter: hue-rotate(190.8deg); }
+.filter-54 { filter: hue-rotate(194.4deg); }
+.filter-55 { filter: hue-rotate(198.0deg); }
+.filter-56 { filter: hue-rotate(201.6deg); }
+.filter-57 { filter: hue-rotate(205.20000000000002deg); }
+.filter-58 { filter: hue-rotate(208.8deg); }
+.filter-59 { filter: hue-rotate(212.4deg); }
+.filter-60 { filter: hue-rotate(216.0deg); }
+.filter-61 { filter: hue-rotate(219.6deg); }
+.filter-62 { filter: hue-rotate(223.20000000000002deg); }
+.filter-63 { filter: hue-rotate(226.8deg); }
+.filter-64 { filter: hue-rotate(230.4deg); }
+.filter-65 { filter: hue-rotate(234.0deg); }
+.filter-66 { filter: hue-rotate(237.6deg); }
+.filter-67 { filter: hue-rotate(241.20000000000002deg); }
+.filter-68 { filter: hue-rotate(244.8deg); }
+.filter-69 { filter: hue-rotate(248.4deg); }
+.filter-70 { filter: hue-rotate(252.0deg); }
+.filter-71 { filter: hue-rotate(255.6deg); }
+.filter-72 { filter: hue-rotate(259.2deg); }
+.filter-73 { filter: hue-rotate(262.8deg); }
+.filter-74 { filter: hue-rotate(266.40000000000003deg); }
+.filter-75 { filter: hue-rotate(270.0deg); }
+.filter-76 { filter: hue-rotate(273.6deg); }
+.filter-77 { filter: hue-rotate(277.2deg); }
+.filter-78 { filter: hue-rotate(280.8deg); }
+.filter-79 { filter: hue-rotate(284.40000000000003deg); }
+.filter-80 { filter: hue-rotate(288.0deg); }
+.filter-81 { filter: hue-rotate(291.6deg); }
+.filter-82 { filter: hue-rotate(295.2deg); }
+.filter-83 { filter: hue-rotate(298.8deg); }
+.filter-84 { filter: hue-rotate(302.40000000000003deg); }
+.filter-85 { filter: hue-rotate(306.0deg); }
+.filter-86 { filter: hue-rotate(309.6deg); }
+.filter-87 { filter: hue-rotate(313.2deg); }
+.filter-88 { filter: hue-rotate(316.8deg); }
+.filter-89 { filter: hue-rotate(320.40000000000003deg); }
+.filter-90 { filter: hue-rotate(324.0deg); }
+.filter-91 { filter: hue-rotate(327.6deg); }
+.filter-92 { filter: hue-rotate(331.2deg); }
+.filter-93 { filter: hue-rotate(334.8deg); }
+.filter-94 { filter: hue-rotate(338.40000000000003deg); }
+.filter-95 { filter: hue-rotate(342.0deg); }
+.filter-96 { filter: hue-rotate(345.6deg); }
+.filter-97 { filter: hue-rotate(349.2deg); }
+.filter-98 { filter: hue-rotate(352.8deg); }
+.filter-99 { filter: hue-rotate(356.40000000000003deg); }
+.filter-100 { filter: hue-rotate(0.0deg); }
+    </style>
+</head>
+<body>
+    <section id="instagram-filter">
+        <h2>Filter Instagram</h2>
+        <form id="filter-form">
+            <label for="image-upload">Unggah Gambar:</label>
+            <input type="file" id="image-upload" accept="image/*" required>
+
+            <label for="filter-select">Pilih Filter:</label>
+            <select id="filter-select">
+                <option value="none">Tidak Ada Filter</option>
+                <option value="filter-1">Filter Sepia</option>
+<option value="filter-2">Filter Cyan</option>
+<option value="filter-3">Filter Magenta</option>
+<option value="filter-4">Filter Yellow</option>
+<option value="filter-5">Filter Orange</option>
+<option value="filter-6">Filter Red</option>
+<option value="filter-7">Filter Green</option>
+<option value="filter-8">Filter Blue</option>
+<option value="filter-9">Filter Warm</option>
+<option value="filter-10">Filter Cool</option>
+<option value="filter-11">Filter Pastel</option>
+<option value="filter-12">Filter Vibrant</option>
+<option value="filter-13">Filter Vintage</option>
+<option value="filter-14">Filter Retro</option>
+<option value="filter-15">Filter Monochrome</option>
+<option value="filter-16">Filter Bright</option>
+<option value="filter-17">Filter Dark</option>
+<option value="filter-18">Filter Shadow</option>
+<option value="filter-19">Filter Highlight</option>
+<option value="filter-20">Filter Ocean</option>
+<option value="filter-21">Filter Forest</option>
+<option value="filter-22">Filter Sunset</option>
+<option value="filter-23">Filter Sunrise</option>
+<option value="filter-24">Filter Dawn</option>
+<option value="filter-25">Filter Dusk</option>
+<option value="filter-26">Filter Summer</option>
+<option value="filter-27">Filter Winter</option>
+<option value="filter-28">Filter Spring</option>
+<option value="filter-29">Filter Autumn</option>
+<option value="filter-30">Filter Glow</option>
+<option value="filter-31">Filter Matte</option>
+<option value="filter-32">Filter Glossy</option>
+<option value="filter-33">Filter Neon</option>
+<option value="filter-34">Filter Faded</option>
+<option value="filter-35">Filter Contrast</option>
+<option value="filter-36">Filter Soft</option>
+<option value="filter-37">Filter Bold</option>
+<option value="filter-38">Filter Clear</option>
+<option value="filter-39">Filter Dreamy</option>
+<option value="filter-40">Filter Fantasy</option>
+<option value="filter-41">Filter Night</option>
+<option value="filter-42">Filter Day</option>
+<option value="filter-43">Filter Twilight</option>
+<option value="filter-44">Filter Galaxy</option>
+<option value="filter-45">Filter Space</option>
+<option value="filter-46">Filter Sepia High</option>
+<option value="filter-47">Filter Sepia Low</option>
+<option value="filter-48">Filter Grayscale High</option>
+<option value="filter-49">Filter Grayscale Low</option>
+<option value="filter-50">Filter Classic</option>
+<option value="filter-51">Filter Elegant</option>
+<option value="filter-52">Filter Sharp</option>
+<option value="filter-53">Filter Blur</option>
+<option value="filter-54">Filter Smooth</option>
+<option value="filter-55">Filter Noise</option>
+<option value="filter-56">Filter Grainy</option>
+<option value="filter-57">Filter Polaroid</option>
+<option value="filter-58">Filter Cinematic</option>
+<option value="filter-59">Filter Film</option>
+<option value="filter-60">Filter HDR</option>
+<option value="filter-61">Filter Vibrance</option>
+<option value="filter-62">Filter Saturation</option>
+<option value="filter-63">Filter Desaturate</option>
+<option value="filter-64">Filter Fade</option>
+<option value="filter-65">Filter Glow Light</option>
+<option value="filter-66">Filter Glow Dark</option>
+<option value="filter-67">Filter Pop</option>
+<option value="filter-68">Filter Deep</option>
+<option value="filter-69">Filter Chill</option>
+<option value="filter-70">Filter Dynamic</option>
+<option value="filter-71">Filter Relax</option>
+<option value="filter-72">Filter Retro Soft</option>
+<option value="filter-73">Filter Retro Intense</option>
+<option value="filter-74">Filter Luxe</option>
+<option value="filter-75">Filter Minimal</option>
+<option value="filter-76">Filter Maximal</option>
+<option value="filter-77">Filter Chic</option>
+<option value="filter-78">Filter Vintage Soft</option>
+<option value="filter-79">Filter Vintage Hard</option>
+<option value="filter-80">Filter Electric</option>
+<option value="filter-81">Filter Golden Hour</option>
+<option value="filter-82">Filter Purple Haze</option>
+<option value="filter-83">Filter Rose Gold</option>
+<option value="filter-84">Filter Aqua</option>
+<option value="filter-85">Filter Lemon</option>
+<option value="filter-86">Filter Coral</option>
+<option value="filter-87">Filter Candy</option>
+<option value="filter-88">Filter Lavender</option>
+<option value="filter-89">Filter Indigo</option>
+<option value="filter-90">Filter Emerald</option>
+<option value="filter-91">Filter Ruby</option>
+<option value="filter-92">Filter Sapphire</option>
+<option value="filter-93">Filter Diamond</option>
+<option value="filter-94">Filter Quartz</option>
+<option value="filter-95">Filter Pearl</option>
+<option value="filter-96">Filter Sand</option>
+<option value="filter-97">Filter Desert</option>
+<option value="filter-98">Filter Arctic</option>
+<option value="filter-99">Filter Tropical</option>
+<option value="filter-100">Filter Zen</option>
+            </select>
+
+            <button type="submit" class="btn-primary">Terapkan Filter</button>
+        </form>
+
+        <div class="preview" id="preview-container">
+            <h3>Pratinjau Gambar:</h3>
+            <img id="preview-image" src="" alt="Gambar Pratinjau" style="display:none;">
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('filter-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const imageUpload = document.getElementById('image-upload');
+            const filterSelect = document.getElementById('filter-select');
+            const previewImage = document.getElementById('preview-image');
+            const previewContainer = document.getElementById('preview-container');
+
+            const file = imageUpload.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                previewImage.src = e.target.result;
+                previewImage.style.display = 'block';
+
+                previewImage.className = '';
+h
+                if (filterSelect.value === 'none') {
+                    previewImage.className = '';
+                } 
+                else if (filterSelect.value === "filter-1") { previewImage.classList.add("filter-1"); }
+else if (filterSelect.value === "filter-2") { previewImage.classList.add("filter-2"); }
+else if (filterSelect.value === "filter-3") { previewImage.classList.add("filter-3"); }
+else if (filterSelect.value === "filter-4") { previewImage.classList.add("filter-4"); }
+else if (filterSelect.value === "filter-5") { previewImage.classList.add("filter-5"); }
+else if (filterSelect.value === "filter-6") { previewImage.classList.add("filter-6"); }
+else if (filterSelect.value === "filter-7") { previewImage.classList.add("filter-7"); }
+else if (filterSelect.value === "filter-8") { previewImage.classList.add("filter-8"); }
+else if (filterSelect.value === "filter-9") { previewImage.classList.add("filter-9"); }
+else if (filterSelect.value === "filter-10") { previewImage.classList.add("filter-10"); }
+else if (filterSelect.value === "filter-11") { previewImage.classList.add("filter-11"); }
+else if (filterSelect.value === "filter-12") { previewImage.classList.add("filter-12"); }
+else if (filterSelect.value === "filter-13") { previewImage.classList.add("filter-13"); }
+else if (filterSelect.value === "filter-14") { previewImage.classList.add("filter-14"); }
+else if (filterSelect.value === "filter-15") { previewImage.classList.add("filter-15"); }
+else if (filterSelect.value === "filter-16") { previewImage.classList.add("filter-16"); }
+else if (filterSelect.value === "filter-17") { previewImage.classList.add("filter-17"); }
+else if (filterSelect.value === "filter-18") { previewImage.classList.add("filter-18"); }
+else if (filterSelect.value === "filter-19") { previewImage.classList.add("filter-19"); }
+else if (filterSelect.value === "filter-20") { previewImage.classList.add("filter-20"); }
+else if (filterSelect.value === "filter-21") { previewImage.classList.add("filter-21"); }
+else if (filterSelect.value === "filter-22") { previewImage.classList.add("filter-22"); }
+else if (filterSelect.value === "filter-23") { previewImage.classList.add("filter-23"); }
+else if (filterSelect.value === "filter-24") { previewImage.classList.add("filter-24"); }
+else if (filterSelect.value === "filter-25") { previewImage.classList.add("filter-25"); }
+else if (filterSelect.value === "filter-26") { previewImage.classList.add("filter-26"); }
+else if (filterSelect.value === "filter-27") { previewImage.classList.add("filter-27"); }
+else if (filterSelect.value === "filter-28") { previewImage.classList.add("filter-28"); }
+else if (filterSelect.value === "filter-29") { previewImage.classList.add("filter-29"); }
+else if (filterSelect.value === "filter-30") { previewImage.classList.add("filter-30"); }
+else if (filterSelect.value === "filter-31") { previewImage.classList.add("filter-31"); }
+else if (filterSelect.value === "filter-32") { previewImage.classList.add("filter-32"); }
+else if (filterSelect.value === "filter-33") { previewImage.classList.add("filter-33"); }
+else if (filterSelect.value === "filter-34") { previewImage.classList.add("filter-34"); }
+else if (filterSelect.value === "filter-35") { previewImage.classList.add("filter-35"); }
+else if (filterSelect.value === "filter-36") { previewImage.classList.add("filter-36"); }
+else if (filterSelect.value === "filter-37") { previewImage.classList.add("filter-37"); }
+else if (filterSelect.value === "filter-38") { previewImage.classList.add("filter-38"); }
+else if (filterSelect.value === "filter-39") { previewImage.classList.add("filter-39"); }
+else if (filterSelect.value === "filter-40") { previewImage.classList.add("filter-40"); }
+else if (filterSelect.value === "filter-41") { previewImage.classList.add("filter-41"); }
+else if (filterSelect.value === "filter-42") { previewImage.classList.add("filter-42"); }
+else if (filterSelect.value === "filter-43") { previewImage.classList.add("filter-43"); }
+else if (filterSelect.value === "filter-44") { previewImage.classList.add("filter-44"); }
+else if (filterSelect.value === "filter-45") { previewImage.classList.add("filter-45"); }
+else if (filterSelect.value === "filter-46") { previewImage.classList.add("filter-46"); }
+else if (filterSelect.value === "filter-47") { previewImage.classList.add("filter-47"); }
+else if (filterSelect.value === "filter-48") { previewImage.classList.add("filter-48"); }
+else if (filterSelect.value === "filter-49") { previewImage.classList.add("filter-49"); }
+else if (filterSelect.value === "filter-50") { previewImage.classList.add("filter-50"); }
+else if (filterSelect.value === "filter-51") { previewImage.classList.add("filter-51"); }
+else if (filterSelect.value === "filter-52") { previewImage.classList.add("filter-52"); }
+else if (filterSelect.value === "filter-53") { previewImage.classList.add("filter-53"); }
+else if (filterSelect.value === "filter-54") { previewImage.classList.add("filter-54"); }
+else if (filterSelect.value === "filter-55") { previewImage.classList.add("filter-55"); }
+else if (filterSelect.value === "filter-56") { previewImage.classList.add("filter-56"); }
+else if (filterSelect.value === "filter-57") { previewImage.classList.add("filter-57"); }
+else if (filterSelect.value === "filter-58") { previewImage.classList.add("filter-58"); }
+else if (filterSelect.value === "filter-59") { previewImage.classList.add("filter-59"); }
+else if (filterSelect.value === "filter-60") { previewImage.classList.add("filter-60"); }
+else if (filterSelect.value === "filter-61") { previewImage.classList.add("filter-61"); }
+else if (filterSelect.value === "filter-62") { previewImage.classList.add("filter-62"); }
+else if (filterSelect.value === "filter-63") { previewImage.classList.add("filter-63"); }
+else if (filterSelect.value === "filter-64") { previewImage.classList.add("filter-64"); }
+else if (filterSelect.value === "filter-65") { previewImage.classList.add("filter-65"); }
+else if (filterSelect.value === "filter-66") { previewImage.classList.add("filter-66"); }
+else if (filterSelect.value === "filter-67") { previewImage.classList.add("filter-67"); }
+else if (filterSelect.value === "filter-68") { previewImage.classList.add("filter-68"); }
+else if (filterSelect.value === "filter-69") { previewImage.classList.add("filter-69"); }
+else if (filterSelect.value === "filter-70") { previewImage.classList.add("filter-70"); }
+else if (filterSelect.value === "filter-71") { previewImage.classList.add("filter-71"); }
+else if (filterSelect.value === "filter-72") { previewImage.classList.add("filter-72"); }
+else if (filterSelect.value === "filter-73") { previewImage.classList.add("filter-73"); }
+else if (filterSelect.value === "filter-74") { previewImage.classList.add("filter-74"); }
+else if (filterSelect.value === "filter-75") { previewImage.classList.add("filter-75"); }
+else if (filterSelect.value === "filter-76") { previewImage.classList.add("filter-76"); }
+else if (filterSelect.value === "filter-77") { previewImage.classList.add("filter-77"); }
+else if (filterSelect.value === "filter-78") { previewImage.classList.add("filter-78"); }
+else if (filterSelect.value === "filter-79") { previewImage.classList.add("filter-79"); }
+else if (filterSelect.value === "filter-80") { previewImage.classList.add("filter-80"); }
+else if (filterSelect.value === "filter-81") { previewImage.classList.add("filter-81"); }
+else if (filterSelect.value === "filter-82") { previewImage.classList.add("filter-82"); }
+else if (filterSelect.value === "filter-83") { previewImage.classList.add("filter-83"); }
+else if (filterSelect.value === "filter-84") { previewImage.classList.add("filter-84"); }
+else if (filterSelect.value === "filter-85") { previewImage.classList.add("filter-85"); }
+else if (filterSelect.value === "filter-86") { previewImage.classList.add("filter-86"); }
+else if (filterSelect.value === "filter-87") { previewImage.classList.add("filter-87"); }
+else if (filterSelect.value === "filter-88") { previewImage.classList.add("filter-88"); }
+else if (filterSelect.value === "filter-89") { previewImage.classList.add("filter-89"); }
+else if (filterSelect.value === "filter-90") { previewImage.classList.add("filter-90"); }
+else if (filterSelect.value === "filter-91") { previewImage.classList.add("filter-91"); }
+else if (filterSelect.value === "filter-92") { previewImage.classList.add("filter-92"); }
+else if (filterSelect.value === "filter-93") { previewImage.classList.add("filter-93"); }
+else if (filterSelect.value === "filter-94") { previewImage.classList.add("filter-94"); }
+else if (filterSelect.value === "filter-95") { previewImage.classList.add("filter-95"); }
+else if (filterSelect.value === "filter-96") { previewImage.classList.add("filter-96"); }
+else if (filterSelect.value === "filter-97") { previewImage.classList.add("filter-97"); }
+else if (filterSelect.value === "filter-98") { previewImage.classList.add("filter-98"); }
+else if (filterSelect.value === "filter-99") { previewImage.classList.add("filter-99"); }
+else if (filterSelect.value === "filter-100") { previewImage.classList.add("filter-100"); }
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>

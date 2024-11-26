@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu Digital dengan Rekening</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+            padding: 20px;
+            margin: 0;
+            background: url('Gambar\ untuk\ buku\ tamu.jpg');
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .btn-primary {
+            background: #007BFF;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        .account-section {
+            text-align: center;
+            margin: 20px 0;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: url('gambar\ BSI.jpg') no-repeat center center/cover;
+        }
+
+        .account-section img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
+
+        .account-details {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .guest-list {
+            margin-top: 30px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .guest-list h3 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .guest-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .guest-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <section id="guestbook">
+        <h2>Buku Tamu Digital dengan Rekening</h2>
+        <p>Selamat datang! Silakan isi buku tamu digital kami.</p>
+
+        <div class="account-section">
+            <div class="account-details">
+                <br><br><br><br><br><br>
+                <p>No. Rekening: <strong>1234-5678-9012</strong></p>
+                <p>Atas Nama: <strong>Hisyam</strong></p>
+            </div>
+        </div>
+
+        <form id="guestbook-form">
+            <label for="name">Nama Anda:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+
+            <button type="submit" class="btn-primary">Kirim Pesan</button>
+        </form>
+
+        <div class="guest-list" id="guest-list">
+            <h3>Daftar Tamu</h3>
+            <div id="guest-items">
+                <p>Belum ada tamu yang mengisi buku tamu.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const form = document.getElementById('guestbook-form');
+        const guestList = document.getElementById('guest-items');
+
+        window.onload = function() {
+            const guests = JSON.parse(localStorage.getItem('guests')) || [];
+            renderGuests(guests);
+        };
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const guest = { name, email, message };
+            const guests = JSON.parse(localStorage.getItem('guests')) || [];
+            guests.push(guest);
+            localStorage.setItem('guests', JSON.stringify(guests));
+
+            renderGuests(guests);
+            form.reset();
+            alert('Pesan berhasil disimpan!');
+        });
+
+        function renderGuests(guests) {
+            guestList.innerHTML = '';
+            if (guests.length === 0) {
+                guestList.innerHTML = '<p>Belum ada tamu yang mengisi buku tamu.</p>';
+                return;
+            }
+
+            guests.forEach((guest, index) => {
+                const guestItem = document.createElement('div');
+                guestItem.className = 'guest-item';
+                guestItem.innerHTML = `<strong>${index + 1}. ${guest.name}</strong> (${guest.email})<br><em>${guest.message}</em>`;
+                guestList.appendChild(guestItem);
+            });
+        }
+    </script>
+</body>
+</html>
