@@ -199,16 +199,29 @@ body {
 
         @media (max-width: 768px) {
             .navbar-menu {
-                display: none;
-                flex-direction: column;
+                position: fixed;
+                top: 0;
+                left: -250px;
+                width: 250px;
+                height: 100%;
                 background-color: #333;
-                width: 100%;
-                padding: 10px 0;
+                transition: left 0.3s ease;
+                z-index: 999;
             }
         
             .navbar-menu.active {
-                display: flex;
-                background-color: #444;
+                left: 0;
+            }
+        
+            .toggle-menu {
+                display: block;
+                cursor: pointer;
+                color: white;
+                font-size: 24px;
+            }
+        
+            .navbar-menu li {
+                margin: 20px 0;
             }
         
             .navbar-menu li a {
@@ -221,6 +234,8 @@ body {
             .navbar-menu li a:hover {
                 background-color: transparent;
                 border: transparent;
+                color: orange;
+                font-size: 10px;
             }
         }
 
