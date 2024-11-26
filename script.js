@@ -23,3 +23,10 @@ function toggleMenu() {
     const navbarMenu = document.querySelector('.navbar-menu');
     navbarMenu.classList.toggle('active');
 }
+
+document.querySelectorAll('.navbar-menu li a').forEach(item => {
+    item.addEventListener('click', () => {
+        const navbarMenu = document.querySelector('.navbar-menu');
+        navbarMenu.classList.remove('active');
+    });
+});
