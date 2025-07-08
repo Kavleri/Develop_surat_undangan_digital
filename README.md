@@ -79,7 +79,7 @@ Proyek ini dilindungi oleh hak cipta penuh. Segala hak cipta dilindungi undang-u
 
 ## 📧 Kontak
 
-Kavleri - [info@Kavleri.com](kavleri79@gmail.com)
+Kavleri - [info@Kavleri.com](mailto:kavleri79@gmail.com)
 
 WhatsApp (untuk pesan cepat):[Kirim Pesan WhatsApp](https://wa.me/6285691753134?text=Halo,%20saya%20tertarik%20untuk%20kolaborasi%20di%20proyek%20undangan%20digital%20Anda!)
 
