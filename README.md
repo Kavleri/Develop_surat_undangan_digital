@@ -1,6 +1,6 @@
 # 💌 Sistem Undangan Digital Inovatif (Frontend Only)
 
-<img src="(https://github.com/Kavleri/Develop_surat_undangan_digital/blob/Muhammad_Hisyam_Alfaris/cuplikan_gambar.png)" alt="Tampilan Utama Aplikasi" width="50%">
+<img src="(https://github.com/Kavleri/Develop_surat_undangan_digital/blob/Muhammad_Hisyam_Alfaris/cuplikan_gambar.png)" alt="Tampilan Utama Aplikasi" width="600" height="400">
 
 Solusi modern dan efisien untuk mendistribusikan undangan acara secara digital, mengurangi limbah kertas, dan menyederhanakan pengalaman RSVP dari sisi klien. Dirancang untuk fleksibilitas dan kemudahan penggunaan, proyek ini berfokus pada pengalaman pengguna yang intuitif. Ini adalah proyek mata kuliah **Pemrograman Web** semester 1 di bawah bimbingan Bapak Sirojul Munir, dengan implementasi sepenuhnya di sisi **frontend**.
 
@@ -11,7 +11,6 @@ Solusi modern dan efisien untuk mendistribusikan undangan acara secara digital, 
 * **Desain Responsif**: Tampilan adaptif yang indah dan fungsional di berbagai perangkat (desktop, tablet, *mobile*).
 * **Personalisasi Undangan**: Antarmuka untuk menyesuaikan detail undangan (nama tamu, tanggal, lokasi, dll.) secara dinamis di sisi klien.
 * **Manajemen RSVP (Simulasi/Klien-Sisi)**: Formulir konfirmasi kehadiran di sisi klien, memberikan umpan balik langsung kepada pengguna *(catatan: data RSVP tidak disimpan di server)*.
-* **Integrasi Peta Interaktif**: Panduan lokasi acara yang intuitif melalui peta *(misal: integrasi statis Google Maps atau OpenStreetMap)*.
 * **Animasi & Transisi Halus**: Meningkatkan pengalaman pengguna dengan interaksi visual yang menarik.
 
 ---
@@ -79,7 +78,7 @@ Proyek ini adalah bagian dari tugas akademik, dan hak cipta penuh atas *source c
 
 ## 📄 Lisensi
 
-Proyek ini dilindungi oleh hak cipta penuh. Segala hak cipta dilindungi undang-undang (*All Rights Reserved*). Lihat file [`LICENSE`](LICENSE) untuk detail selengkapnya.
+Proyek ini dilindungi oleh hak cipta penuh. Segala hak cipta dilindungi undang-undang (*All Rights Reserved*). Lihat file [`LICENSE`](https://github.com/Kavleri/Develop_surat_undangan_digital/blob/Muhammad_Hisyam_Alfaris/LICENSE) untuk detail selengkapnya.
 
 ---
 
@@ -87,4 +86,4 @@ Proyek ini dilindungi oleh hak cipta penuh. Segala hak cipta dilindungi undang-u
 
 Kavleri - [kavleri@example.com](mailto:kavleri@example.com)
 
-Link Proyek: [https://github.com/Kavleri/Develop_surat_undangan_digital](https://github.com/Kavleri/Develop_surat_undangan_digital)
+Link Proyek: [Klik disini](https://kavleri.github.io/Develop_surat_undangan_digital/#home)
