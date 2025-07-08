@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Akun</title>
-    <link rel="stylesheet" href="login&registerasi.css">
+    <title>Masuk - Layanan Undangan Digital</title>
+    <link rel="stylesheet" href="login_registrasi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="login">
-        <h2>Login Akun</h2>
-        <form id="login-form">
-            <label for="username">Nama Pengguna:</label>
-            <input type="text" id="username" name="username" required>
+    <div class="background-overlay"></div>
+    <section id="auth-container">
+        <div class="auth-card">
+            <h2><i class="fas fa-sign-in-alt"></i> Selamat Datang Kembali!</h2>
+            <p>Silakan masuk untuk melanjutkan pembuatan undangan digital impian Anda.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Nama Pengguna:</label>
+                    <input type="text" id="username" name="username" required aria-label="Nama Pengguna">
+                </div>
 
-            <label for="password">Kata Sandi:</label>
-            <input type="password" id="password" name="password" required>
+                <div class="form-group">
+                    <label for="password">Kata Sandi:</label>
+                    <input type="password" id="password" name="password" required aria-label="Kata Sandi">
+                </div>
 
-            <button type="submit" class="btn-primary">Masuk</button>
-        </form>
-        <p>Belum punya akun? <a href="registrasi.html">Daftar di sini</a></p>
+                <button type="submit" class="btn-action">Masuk</button>
+            </form>
+            <p class="auth-link">Belum punya akun? <a href="registrasi.html">Daftar sekarang</a></p>
+        </div>
     </section>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script> <script src="auth.js"></script>
 </body>
 </html>
