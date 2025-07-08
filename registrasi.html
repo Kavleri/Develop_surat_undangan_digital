@@ -3,28 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrasi Akun</title>
-    <link rel="stylesheet" href="login&registerasi.css">
+    <title>Daftar - Layanan Undangan Digital</title>
+    <link rel="stylesheet" href="login_registrasi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="register">
-        <h2>Registrasi Akun</h2>
-        <form id="register-form">
-            <label for="username">Nama Pengguna:</label>
-            <input type="text" id="username" name="username" required>
+    <div class="background-overlay"></div>
+    <section id="auth-container">
+        <div class="auth-card">
+            <h2><i class="fas fa-user-plus"></i> Buat Akun Baru</h2>
+            <p>Daftarkan diri Anda untuk mulai membuat undangan digital yang menawan.</p>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">Nama Pengguna:</label>
+                    <input type="text" id="username" name="username" required aria-label="Nama Pengguna">
+                </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-label="Email">
+                </div>
 
-            <label for="password">Kata Sandi:</label>
-            <input type="password" id="password" name="password" required>
+                <div class="form-group">
+                    <label for="password">Kata Sandi:</label>
+                    <input type="password" id="password" name="password" required aria-label="Kata Sandi">
+                </div>
 
-            <label for="confirm-password">Konfirmasi Kata Sandi:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="form-group">
+                    <label for="confirm-password">Konfirmasi Kata Sandi:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required aria-label="Konfirmasi Kata Sandi">
+                </div>
 
-            <button type="submit" class="btn-primary">Daftar</button>
-        </form>
-        <p>Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+                <button type="submit" class="btn-action">Daftar</button>
+            </form>
+            <p class="auth-link">Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+        </div>
     </section>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script> <script src="auth.js"></script>
 </body>
 </html>
