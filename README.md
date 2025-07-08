@@ -2,7 +2,7 @@
 
 <img src="cuplikan_gambar.png" alt="Tampilan Utama Aplikasi" width="600" height="400" align-items="center">
 
-Solusi modern dan efisien untuk mendistribusikan undangan acara secara digital, mengurangi limbah kertas, dan menyederhanakan pengalaman RSVP dari sisi klien. Dirancang untuk fleksibilitas dan kemudahan penggunaan, proyek ini berfokus pada pengalaman pengguna yang intuitif. Ini adalah proyek mata kuliah **Pemrograman Web** semester 1 di bawah bimbingan Bapak Sirojul Munir, dengan implementasi sepenuhnya di sisi **frontend**.
+Solusi modern dan efisien untuk mendistribusikan undangan acara secara digital, mengurangi limbah kertas, dan menyederhanakan pengalaman RSVP dari sisi klien. Dirancang untuk fleksibilitas dan kemudahan penggunaan, proyek ini berfokus pada pengalaman pengguna yang intuitif. Ini adalah proyek mata kuliah **Pemrograman Web** semester 1 di bawah bimbingan Bapak <i>Dr. Sirojul Munir, S.Si., M.Kom</i>. dengan implementasi sepenuhnya di sisi **frontend**.
 
 ---
 
@@ -34,12 +34,7 @@ Untuk melihat dan menjalankan proyek ini secara lokal, ikuti langkah-langkah sed
     cd Develop_surat_undangan_digital
     ```
 
-2.  **Instalasi Dependensi Frontend:**
-    Jika Anda menggunakan framework seperti React/Vue/Next.js:
-    ```bash
-    npm install  # atau `yarn install`
-    ```
-    Jika ini adalah proyek HTML/CSS/JavaScript murni tanpa *package manager*:
+    Ini adalah proyek HTML/CSS/JavaScript murni tanpa *package manager*:
     *(Tidak ada langkah instalasi spesifik, cukup lewati ke langkah 3)*
 
 3.  **Jalankan Aplikasi:**
@@ -47,7 +42,7 @@ Untuk melihat dan menjalankan proyek ini secara lokal, ikuti langkah-langkah sed
         ```bash
         npm start  # atau `npm run dev` atau `yarn start`
         ```
-        Aplikasi akan berjalan di `http://localhost:[PORT_ANDA]`.
+        Aplikasi akan berjalan di `http://localhost:[LIHAT_PORT_ANDA]`.
     * **Untuk Proyek HTML/CSS/JavaScript Murni:**
         Cukup buka file `index.html` langsung di browser Anda.
         ```bash
