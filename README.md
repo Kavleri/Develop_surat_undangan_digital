@@ -84,6 +84,6 @@ Proyek ini dilindungi oleh hak cipta penuh. Segala hak cipta dilindungi undang-u
 
 ## 📧 Kontak
 
-Kavleri - [kavleri@example.com](mailto:kavleri@example.com)
-
+Kavleri - [info@Kavleri.com](muhammadhisyamalfaris2085@gmail.com)
+WhatsApp (untuk pesan cepat):[Kirim Pesan WhatsApp](https://wa.me/6285691753134 text=Halo,%20saya%20tertarik%20untuk%20kolaborasi%20di%20proyek%20undangan%20digital%20Anda!)
 Link Proyek: [Klik disini](https://kavleri.github.io/Develop_surat_undangan_digital/#home)
