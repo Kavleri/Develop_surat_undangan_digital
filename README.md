@@ -1,6 +1,6 @@
 # 💌 Sistem Undangan Digital Inovatif (Frontend Only)
 
-<img src="cuplikan_gambar.png" alt="Tampilan Utama Aplikasi" width="600" height="400">
+<img src="cuplikan_gambar.png" alt="Tampilan Utama Aplikasi" width="600" height="400" align="center">
 
 Solusi modern dan efisien untuk mendistribusikan undangan acara secara digital, mengurangi limbah kertas, dan menyederhanakan pengalaman RSVP dari sisi klien. Dirancang untuk fleksibilitas dan kemudahan penggunaan, proyek ini berfokus pada pengalaman pengguna yang intuitif. Ini adalah proyek mata kuliah **Pemrograman Web** semester 1 di bawah bimbingan Bapak Sirojul Munir, dengan implementasi sepenuhnya di sisi **frontend**.
 
