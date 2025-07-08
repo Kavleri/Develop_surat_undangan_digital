@@ -1,4 +1,4 @@
-# 💌 Sistem Undangan Digital Inovatif (Frontend Only)
+# Sistem Undangan Digital Inovatif (Frontend Only)
 
 <img src="cuplikan_gambar.png" alt="Tampilan Utama Aplikasi" width="600" height="400" align-items="center">
 
@@ -6,7 +6,7 @@ Solusi modern dan efisien untuk mendistribusikan undangan acara secara digital, 
 
 ---
 
-## ✨ Fitur Unggulan
+## Fitur Unggulan
 
 * **Desain Responsif**: Tampilan adaptif yang indah dan fungsional di berbagai perangkat (desktop, tablet, *mobile*).
 * **Personalisasi Undangan**: Antarmuka untuk menyesuaikan detail undangan (nama tamu, tanggal, lokasi, dll.) secara dinamis di sisi klien.
@@ -15,7 +15,7 @@ Solusi modern dan efisien untuk mendistribusikan undangan acara secara digital, 
 
 ---
 
-## 🛠️ Teknologi Tumpuan
+## Teknologi Tumpuan
 
 Proyek ini dibangun sepenuhnya di sisi frontend, menggunakan teknologi web modern untuk pengalaman pengguna yang optimal:
 
@@ -24,7 +24,7 @@ Proyek ini dibangun sepenuhnya di sisi frontend, menggunakan teknologi web moder
 
 ---
 
-## 🚀 Memulai Proyek (Quick Start)
+## Memulai Proyek (Quick Start)
 
 Untuk melihat dan menjalankan proyek ini secara lokal, ikuti langkah-langkah sederhana di bawah ini. Tidak ada kebutuhan server backend atau database.
 
@@ -53,7 +53,7 @@ Untuk melihat dan menjalankan proyek ini secara lokal, ikuti langkah-langkah sed
 
 ---
 
-## 💡 Panduan Penggunaan
+## Panduan Penggunaan
 
 1.  **Navigasi**: Jelajahi berbagai halaman undangan untuk melihat contoh desain.
 2.  **Kustomisasi Lokal**: Anda dapat memodifikasi file-file HTML/CSS/JS secara langsung untuk melihat perubahan tampilan atau informasi undangan.
@@ -61,7 +61,7 @@ Untuk melihat dan menjalankan proyek ini secara lokal, ikuti langkah-langkah sed
 
 ---
 
-## 🤝 Kolaborasi & Penggunaan Kode
+## Kolaborasi & Penggunaan Kode
 
 Proyek ini adalah bagian dari tugas akademik, dan hak cipta penuh atas *source code* sepenuhnya dimiliki oleh pemilik repositori.
 
@@ -71,13 +71,13 @@ Proyek ini adalah bagian dari tugas akademik, dan hak cipta penuh atas *source c
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 Proyek ini dilindungi oleh hak cipta penuh. Segala hak cipta dilindungi undang-undang (*All Rights Reserved*). Lihat file [`LICENSE`](https://github.com/Kavleri/Develop_surat_undangan_digital/blob/Muhammad_Hisyam_Alfaris/LICENSE) untuk detail selengkapnya.
 
 ---
 
-## 📧 Kontak
+## Kontak
 
 Kavleri - [info@Kavleri.com](mailto:kavleri79@gmail.com)
 
